@@ -21,7 +21,14 @@
             <router-link to="/otro_link">Otro enlace</router-link>
 
             <modal-bootstrap>
+                <div slot="header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hola Mundo</h5>
+                </div>
                 <p>Esto es un contenido para nuestro modal</p>
+                <div slot="footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cierra</button>
+                    <button type="button" class="btn btn-primary">Guarda cambios</button>
+                </div>
             </modal-bootstrap>
 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
