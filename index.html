@@ -13,7 +13,8 @@
 
 <body>
     <div class="container">
-        <div id="app">
+        <div id="app" class="container">
+
 
             <router-link to="/">Home</router-link>
             <router-link to="/list_person">List Person</router-link>
@@ -36,6 +37,7 @@
             </button>
 
             <router-view></router-view>
+            <img-post :url="img_pixa"></img-post>
 
         </div>
     </div>
@@ -49,6 +51,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
+    <script src='./js/Components/ImagePost.js'></script>
     <script src='./js/Components/Slot.js'></script>
     <script src='./js/Components/ListPerson.js'></script>
     <script src='./js/Components/ListProgramming.js'></script>
